@@ -1,5 +1,11 @@
 'use strict';
 
-const fn = null;
+const fn = obj => {
+  inc(obj);
+
+  function inc(o) {
+    o.x++;
+  }
+};
 
 module.exports = { fn };
